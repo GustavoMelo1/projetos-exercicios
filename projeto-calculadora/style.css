@@ -1,0 +1,104 @@
+/* Reset básico e fonte padrão */
+*{
+    margin: 0;                      /* remove margem padrão de todos elementos */
+    padding: 0;                     /* remove padding padrão de todos elementos */
+    box-sizing: border-box;         /* inclui borda e padding no cálculo de largura/altura */
+    font-family: "Roboto", sans-serif;  /* define fonte padrão como Roboto, com fallback sans-serif */
+}
+
+/* Body - fundo e espaçamento */
+body{
+    background-color: rgb(190, 190, 190); /* cor de fundo cinza claro */
+    padding-top: 100px;                   /* espaço no topo (afasta do header fixo) */
+}
+
+/* Header - logo e título */
+header{
+    display: flex;              /* usa flexbox no header */
+    align-items: center;        /* alinha itens verticalmente ao centro */
+    margin-bottom: 40px;        /* espaço abaixo do header */
+}
+
+header img{
+    height: 36px;               /* altura fixa da logo */
+    margin-right: 16px;         /* espaço entre a logo e o título */
+}
+
+header h1{
+    font-size: 40px;            /* tamanho grande pro título */
+    font-weight: bold;          /* deixa o título em negrito */
+}
+
+/* Container - centralização */
+.container{
+    max-width: 960px;           /* largura máxima do container */
+    width: 100%;                /* ocupa 100% até chegar no limite */
+    margin: 0 auto;             /* centraliza horizontalmente */
+}
+
+/* Formulário - inputs e botão */
+form{
+    display: flex;              /* coloca inputs e botão lado a lado */
+    max-width: 640px;           /* largura máxima do form */
+    width: 100%;                /* ocupa largura toda dentro do limite */
+    justify-content: space-between; /* distribui espaço entre os itens */
+    margin-bottom: 56px;        /* espaço abaixo do form */
+}
+
+form input{
+    font-size: 24px;            /* texto maior nos inputs */
+    background-color: white;    /* fundo branco */
+    border: none;               /* sem borda padrão */
+    border-bottom: 2px solid black; /* linha inferior preta */
+    padding: 8px;               /* espaço interno */
+}
+
+form button{
+    background-color: green;    /* fundo verde */
+    color: white;               /* texto branco */
+    font-size: 24px;            /* texto grande */
+    font-weight: bold;          /* texto em negrito */
+    border: none;               /* sem borda padrão */
+    cursor: pointer;            /* cursor de mãozinha */
+    padding: 8px;               /* espaço interno */
+}
+
+/* Table - customizando tabela */
+table{
+    width: 100%;                /* tabela ocupa toda a largura disponível */
+}
+
+table th{
+    border-bottom:2px solid black; /* linha grossa embaixo dos cabeçalhos */
+    padding: 16px;                  /* espaço interno */
+    font-size: 24px;                /* tamanho maior pro título da coluna */
+    font-weight: bold;              /* texto em negrito */
+}
+
+table td{
+    padding: 16px 0;                 /* espaço interno só em cima/baixo */
+    text-align: center;              /* centraliza texto na célula */
+    font-size: 18px;                 /* tamanho médio */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* linha de separação clara */
+}
+
+table td img{
+    height: 30px;                    /* altura fixa pros ícones */
+}
+
+/* Resultado - badges de status */
+.resultado{
+    padding: 8px;                     /* espaço interno do “badge” */
+    font-weight: bold;                /* texto em negrito */
+    color: white;                     /* texto branco */
+    background-color: black;          /* fundo preto */
+    border-radius: 3px;               /* cantos levemente arredondados */
+}
+
+.aprovado{
+    background-color: green;          /* fundo verde quando aprovado */
+}
+
+.reprovado{
+    background-color: red;            /* fundo vermelho quando reprovado */
+}
